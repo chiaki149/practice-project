@@ -3,7 +3,7 @@
     <h1><a href="/">練習用のサイト</a></h1>
     <div class="container">
       <div class="main">
-        contents
+        <router-view></router-view>
       </div>
       <div class="side">
         <ul class="menu">
@@ -12,7 +12,6 @@
           <li><router-link to="/input">登録編集画面</router-link></li>
         </ul>
       </div>
-      <router-view></router-view>
     </div>
   </div>
 </template>

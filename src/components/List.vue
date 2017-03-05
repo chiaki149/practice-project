@@ -1,16 +1,19 @@
 <template>
-  <div class="formtext">
-    <div>aaaaaa<input type="text" value="テスト">bbbaaaaaa</div>
-    <p>tamesi aaaaaaaああああ</p>
+  <div>
+    <common-title></common-title>
+    {{ msg }}
   </div>
 </template>
 
 <script>
+import CommonTitle from './items/CommonTitle.vue'
 export default {
-  name: 'formtext',
+  components: {
+    CommonTitle
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: '一覧画面'
     }
   }
 }
