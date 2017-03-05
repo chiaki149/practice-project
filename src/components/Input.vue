@@ -1,9 +1,17 @@
 <template>
-  <input type="text">bbb
+  <div class="formtext">
+    <div>ainput</p>
+  </div>
 </template>
 
 <script>
 export default {
+  name: 'formtext',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
 }
 </script>
 

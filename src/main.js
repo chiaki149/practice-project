@@ -2,6 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import router from './router'
+import './assets/base.css'
+import './assets/style.css'
 
 /* eslint-disable no-new */
 new Vue({
@@ -10,6 +12,7 @@ new Vue({
   template: '<App/>',
   components: {
     App: require('./App.vue'),
-    FormTypeText: require('./components/FormTypeText.vue')
+    List: require('./components/List.vue'),
+    Input: require('./components/Input.vue')
   }
 })
