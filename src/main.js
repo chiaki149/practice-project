@@ -12,7 +12,7 @@ new Vue({
   template: '<App/>',
   components: {
     App: require('./App.vue'),
-    List: require('./components/List.vue'),
-    Input: require('./components/Input.vue')
+    ListItems: require('./components/ListItems.vue'),
+    InputItems: require('./components/InputItems.vue')
   }
 })
