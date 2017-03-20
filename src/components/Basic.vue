@@ -6,6 +6,7 @@
     <div id="sample_namedata">
       <p v-text="fullName()"></p>
     </div>
+    <p @click="type1()">ここクリックしたらアラート</p>
 </template>
 
 <script>
@@ -24,6 +25,9 @@ export default {
   methods: {
     fullName: function () {
       return this.firstName + ' ' + this.lastName
+    },
+    type1: function () {
+      alert('message')
     }
   }
 }
