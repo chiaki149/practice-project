@@ -8,7 +8,7 @@
       <div class="side">
         <ul class="menu">
           <li><router-link to="/" exact>HOME</router-link></li>
-          <li><router-link to="/basic">基本構文</router-link></li>
+          <li><router-link to="/basic" @click="type1('これがやりたいんだけど')">基本構文</router-link></li>
           <li><router-link to="/listitems">一覧画面</router-link></li>
           <li><router-link to="/inputitems">登録編集画面</router-link></li>
         </ul>
