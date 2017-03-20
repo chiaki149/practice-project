@@ -13,4 +13,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 </style>

@@ -2,7 +2,10 @@
   <div>
     <common-title></common-title>
     {{ msg }}
-  </div>
+    <p>Vue.jsの基本的な使い方をこのページに記載 <a href="http://qiita.com/hosomichi/items/3faf74b7141081731a75">参考ページ</a></p>
+    <div id="sample_namedata">
+      <p v-text="fullName()"></p>
+    </div>
 </template>
 
 <script>
@@ -11,9 +14,16 @@ export default {
   components: {
     CommonTitle
   },
-  data () {
+  data: function () {
     return {
-      msg: '一覧画面'
+      msg: '話が違うじゃないか',
+      firstName: 'Taro',
+      lastName: 'Urashima'
+    }
+  },
+  methods: {
+    fullName: function () {
+      return this.firstName + ' ' + this.lastName
     }
   }
 }
